@@ -1,0 +1,11 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.reason {
+  max-width: 25rem;
+
+  .icon__container {
+    font-size: 3.5rem;
+    color: $color-primary;
+  }
+}

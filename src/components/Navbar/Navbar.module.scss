@@ -1,0 +1,141 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.navbar {
+  background-color: $color-primary;
+  height: fit-content;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  // box-shadow: 0px 13px 35px -12px rgb(0 0 0 / 15%);
+  padding: 0 1.6rem;
+  min-height: 64px;
+  z-index: 10;
+
+  .wrapper {
+    @include section-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: $color-white;
+      font-size: 40px;
+      gap: 0.5rem;
+      height: 100%;
+      padding: 5px 0;
+    }
+
+    .burgerMenu {
+      display: none;
+      padding: 0.5rem 1.5rem;
+      font-size: 3rem;
+      color: $color-white;
+      border: 1px solid $color-white;
+      border-radius: 0.5rem;
+    }
+
+
+    .menu {
+      display: flex;
+
+      .menuItems {
+        display: flex;
+        gap: 1rem;
+
+        .linkItem {
+          font-size: 1.6rem;
+          text-transform: capitalize;
+
+          .link,
+          .sublinks {
+            position: relative;
+            color: $color-white;
+            padding: 2rem;
+          }
+
+          .link::before,
+          .sublinks::before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%) scale(0);
+            width: 100%;
+            height: 5px;
+            border-radius: 25px;
+            background-color: $color-white;
+            transition: .3s;
+          }
+
+          .link:hover::before,
+          .sublinks:hover::before {
+            transform: translateX(-50%) scale(1);
+          }
+
+        }
+      }
+
+    }
+
+
+  }
+}
+
+@media (max-width:992px) {
+  .navbar {
+
+    .wrapper {
+      padding: 0;
+
+      .burgerMenu {
+        display: block;
+      }
+
+      .menu {
+        position: relative;
+        flex: 1 0 100%;
+        height: 100%;
+
+        .menuItems {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 1rem;
+          width: 100%;
+          max-height: 0;
+          visibility: hidden;
+          transition: 0.5s ease;
+
+          .linkItem {
+            width: 100%;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+
+
+            .link,
+            .sublinks {
+              display: block;
+              color: $color-white;
+              padding: 1rem;
+            }
+          }
+        }
+
+        .showMenu {
+          max-height: 500px;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

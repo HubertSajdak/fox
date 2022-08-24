@@ -1,0 +1,138 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.header {
+  position: relative;
+  background-color: $color-primary;
+
+  .wrapper {
+    @include section-wrapper;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 170px;
+    margin: 0 auto;
+
+    .textContainer {
+      margin: 0 1.5rem;
+      flex-grow: 1;
+
+      p,
+      h1 {
+        color: $color-white;
+      }
+
+      h1 {
+        font-size: 9rem;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+      }
+
+      p {
+        line-height: 3rem;
+        font-size: 1.6rem;
+      }
+    }
+
+    .imgContainer {
+      flex-grow: 1;
+      margin: 0 7rem;
+      z-index: 1;
+
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  border-right: 100vw solid #fff;
+  border-top: 200px solid transparent;
+  width: 100%;
+  z-index: 0;
+}
+
+@media (max-width:992px) {
+  .header {
+
+    .wrapper {
+      @include section-wrapper;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 170px;
+      margin: 0 auto;
+
+      .header__text {
+        position: relative;
+        margin: 0 1.5rem;
+        max-width: 50%;
+
+        p,
+        h1 {
+          color: $color-white;
+        }
+
+        h1 {
+          font-size: 9rem;
+          text-transform: uppercase;
+          margin: 0 0 8px;
+        }
+
+        p {
+          line-height: 3rem;
+          font-size: 1.6rem;
+        }
+      }
+
+      .header__img {
+        margin: 0 1.5rem;
+        z-index: 1;
+
+        img {
+          width: 330px;
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .header {
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .header__text {
+        align-self: flex-start;
+        max-width: 100%;
+
+        h1 {
+          font-size: 6rem;
+
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+
+      .header__img {
+        align-self: flex-end;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
