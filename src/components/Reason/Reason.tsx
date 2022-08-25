@@ -1,9 +1,7 @@
 import styles from "./Reason.module.scss";
-export interface ReasonProps {
-	text: React.ReactNode;
-	icon: React.ReactNode;
-}
-const Reason = ({ text, icon }: ReasonProps) => {
+import { BoxProps as ReasonProps } from "../Box/Box";
+
+const Reason = ({ text, icon }: Omit<ReasonProps, "title">) => {
 	return (
 		<div className={styles.reason}>
 			<div className={styles.icon__container}>{icon}</div>
