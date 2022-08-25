@@ -24,6 +24,7 @@
 
 
       img {
+        width: 100%;
         max-width: 35rem;
       }
     }
@@ -59,45 +60,48 @@
 }
 
 @media (max-width:768px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
+  .about {
 
-    .imgContainer {
+    .wrapper {
       display: flex;
-      justify-content: center;
-      flex-grow: 1;
-      padding: 0 1.5rem;
-      width: 100%;
-      max-width: 100%;
+      flex-direction: column;
 
-    }
+      .imgContainer {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 0 1.5rem;
+        width: 100%;
+        max-width: 100%;
 
-    .textContainer {
-      flex-grow: 1;
-      padding: 0 1.5rem;
-      max-width: none;
-
-      .title {
-        font-size: 4rem;
-        margin: 0 0 8px;
-        color: $color-blue;
-        font-weight: 900;
       }
 
-      .description {
-        font-size: 1.6rem;
-        line-height: 3rem;
-        margin-bottom: 5rem;
-      }
+      .textContainer {
+        flex-grow: 1;
+        padding: 0 1.5rem;
+        max-width: none;
 
-      .reasonsContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        font-size: 1.6rem;
-        line-height: 3rem;
+        .title {
+          font-size: 4rem;
+          margin: 0 0 8px;
+          color: $color-blue;
+          font-weight: 900;
+        }
 
+        .description {
+          font-size: 1.6rem;
+          line-height: 3rem;
+          margin-bottom: 5rem;
+        }
+
+        .reasonsContainer {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+          font-size: 1.6rem;
+          line-height: 3rem;
+
+        }
       }
     }
   }

@@ -1,0 +1,41 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.otherFeatures {
+  @include section-padding;
+  background-color: $color-primary;
+  overflow: hidden;
+
+  .wrapper {
+    .textContainer {
+      text-align: center;
+      margin-bottom: 5rem;
+
+      h3 {
+        color: $color-blue;
+        font-size: 6rem;
+        margin-bottom: 2.5rem;
+
+        span {
+          color: $color-white;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        max-width: 75rem;
+        margin: 0 auto;
+      }
+
+    }
+  }
+}
+
+:global(.slick-slide) {
+  opacity: 0.8;
+  transition: .3s;
+}
+
+:global(.slick-current) {
+  opacity: 1;
+}
