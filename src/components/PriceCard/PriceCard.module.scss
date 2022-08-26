@@ -1,0 +1,95 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.priceCard {
+  padding: 0 1.5rem;
+  width: 350px;
+
+  .topBackground {
+    background-image: url('../../images/gray-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+
+    span {
+      position: absolute;
+      width: 200px;
+      left: -68px;
+      top: 20px;
+      padding: 2px 0;
+      font-weight: 300;
+      color: #fff;
+      font-size: 1.6rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 3rem;
+      transform: rotate(-45deg);
+      background: $color-primary;
+    }
+
+    h3,
+    h4,
+    h5 {
+      color: $color-primary;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 8rem;
+    }
+
+    h4 {
+      font-size: 2.5rem;
+    }
+
+    h3::before {
+      content: "$";
+      font-size: 2rem;
+    }
+
+    h5 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .bottom {
+    background-color: $color-primary;
+    text-align: center;
+    padding: 2.5rem 0;
+
+    ul {
+      margin-bottom: 5rem;
+
+      li {
+        color: $color-white;
+        font-size: 1.8rem;
+        font-weight: 300;
+        border-bottom: 1px solid #f6f6f647;
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .priceCard {
+    max-width: 32rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .priceCard {
+    max-width: 24rem;
+  }
+}
+
+@media(max-width:768px) {
+  .priceCard {
+    width: 100%;
+    max-width: 100%;
+  }
+}

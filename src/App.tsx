@@ -5,6 +5,7 @@ import Boxes from "./components/sections/Boxes/Boxes";
 import About from "./components/sections/About/About";
 import Features from "./components/sections/Features/Features";
 import OtherFeatures from "./components/sections/OtherFeatures/OtherFeatures";
+import Prices from "./components/sections/Prices/Prices";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<About />
 			<Features />
 			<OtherFeatures />
+			<Prices />
 		</div>
 	);
 }
