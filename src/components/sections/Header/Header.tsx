@@ -1,9 +1,9 @@
-import BaseLink from "../../Button/BaseLink";
+import BaseLink from "../../BaseLink/BaseLink";
 import styles from "./Header.module.scss";
 import phoneImg from "../../../images/mobile-1.png";
 const Header = () => {
 	return (
-		<header className={styles.header}>
+		<header id="home" className={styles.header}>
 			<div className={styles.wrapper}>
 				<div className={styles.textContainer}>
 					<p style={{ fontSize: "1.6rem" }}>With us you will</p>
