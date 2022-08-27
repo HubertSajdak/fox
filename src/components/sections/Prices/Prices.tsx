@@ -69,7 +69,7 @@ const Prices = () => {
 					/>
 					<PriceCard
 						title="Enterprise"
-						price="30"
+						price="80"
 						list={[
 							{
 								id: 0,

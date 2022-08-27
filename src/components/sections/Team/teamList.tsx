@@ -1,0 +1,51 @@
+const teamList = [
+	{
+		id: 0,
+		photo: "https://randomuser.me/api/portraits/men/81.jpg",
+		name: "harry",
+		surname: "henry",
+		role: "front-end developer",
+		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio provident dolores.",
+	},
+	{
+		id: 1,
+		photo: "https://randomuser.me/api/portraits/women/26.jpg",
+		name: "poppy",
+		surname: "reuben",
+		role: "back-end developer",
+		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio provident dolores.",
+	},
+	{
+		id: 2,
+		photo: "https://randomuser.me/api/portraits/men/66.jpg",
+		name: "alexander",
+		surname: "thomas",
+		role: "UX/UI Designer",
+		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio provident dolores.",
+	},
+	{
+		id: 3,
+		photo: "https://randomuser.me/api/portraits/women/70.jpg",
+		name: "emilia",
+		surname: "noah",
+		role: "scrum master",
+		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio provident dolores.",
+	},
+	{
+		id: 4,
+		photo: "https://randomuser.me/api/portraits/men/1.jpg",
+		name: "jerry",
+		surname: "johnson",
+		role: "front-end developer",
+		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio provident dolores.",
+	},
+	{
+		id: 5,
+		photo: "https://randomuser.me/api/portraits/men/11.jpg",
+		name: "john",
+		surname: "doe",
+		role: "front-end developer",
+		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio provident dolores.",
+	},
+];
+export default teamList;
