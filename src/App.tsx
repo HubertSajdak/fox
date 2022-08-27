@@ -7,6 +7,7 @@ import Features from "./components/sections/Features/Features";
 import OtherFeatures from "./components/sections/OtherFeatures/OtherFeatures";
 import Prices from "./components/sections/Prices/Prices";
 import Team from "./components/sections/Team/Team";
+import FAQ from "./components/sections/FAQ/FAQ";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<OtherFeatures />
 			<Prices />
 			<Team />
+			<FAQ />
 		</div>
 	);
 }

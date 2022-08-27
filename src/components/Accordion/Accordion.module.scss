@@ -1,0 +1,47 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.accordion {
+  max-width: 73rem;
+
+  .card {
+    margin-bottom: 1rem;
+    border-radius: 2.8rem;
+    background-color: $color-primary;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: auto;
+
+    overflow: hidden;
+
+    .cardHeader {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 2rem;
+      color: $color-white;
+      padding: 1.5rem 3rem;
+      cursor: pointer;
+    }
+
+
+    .cardBody {
+      background-color: $color-white;
+      line-height: 3rem;
+      height: 0;
+      opacity: 0;
+      padding: 0 3rem;
+      font-size: 1.6rem;
+      text-align: justify;
+      transition: 0.3s ease;
+
+    }
+
+    .showCard {
+      height: auto;
+      opacity: 1;
+      padding: 3rem;
+      transition: 0.3s ease;
+
+    }
+  }
+}

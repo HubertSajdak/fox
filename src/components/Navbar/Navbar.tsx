@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import links from "./links";
 import { useState } from "react";
 const Navbar = () => {
-	const [navOpen, setNavOpen] = useState<boolean>();
+	const [navOpen, setNavOpen] = useState<boolean>(false);
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.wrapper}>

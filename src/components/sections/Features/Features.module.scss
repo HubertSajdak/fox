@@ -153,6 +153,20 @@
   }
 }
 
+@media(max-width:768px) {
+  .features {
+    .wrapper {
+      .textContainer {
+        padding: 1.5rem;
+
+        h3 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width:576px) {
   .features {
     .wrapper {
