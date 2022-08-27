@@ -6,6 +6,7 @@ import About from "./components/sections/About/About";
 import Features from "./components/sections/Features/Features";
 import OtherFeatures from "./components/sections/OtherFeatures/OtherFeatures";
 import Prices from "./components/sections/Prices/Prices";
+import Team from "./components/sections/Team/Team";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			<Features />
 			<OtherFeatures />
 			<Prices />
+			<Team />
 		</div>
 	);
 }
