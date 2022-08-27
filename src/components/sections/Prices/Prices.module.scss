@@ -50,6 +50,14 @@
 @media (max-width:768px) {
   .prices {
     .wrapper {
+      .textContainer {
+        padding: 1.5rem;
+
+        h3 {
+          font-size: 4rem;
+        }
+      }
+
       .cardsContainer {
         flex-direction: column;
         align-items: center;

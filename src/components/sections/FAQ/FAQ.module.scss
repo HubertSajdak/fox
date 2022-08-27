@@ -1,14 +1,8 @@
 @import "../../../styles/mixins";
 @import "../../../styles/variables";
 
-.team {
+.faq {
   @include section-padding;
-  background-image: url('../../../images/gray-bg.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  overflow: hidden;
 
   .wrapper {
     @include section-wrapper;
@@ -40,11 +34,25 @@
       }
 
     }
+
+    .content {
+      display: flex;
+      align-items: center;
+
+      .imgContainer {
+
+        max-width: 35rem;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
 @media (max-width:768px) {
-  .team {
+  .faq {
     .wrapper {
       .textContainer {
         padding: 1.5rem;
@@ -53,17 +61,10 @@
           font-size: 4rem;
         }
       }
+
+      .content {
+        flex-direction: column;
+      }
     }
   }
-}
-
-:global(.slick-dots) {
-  position: absolute;
-  bottom: -25px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
 }
