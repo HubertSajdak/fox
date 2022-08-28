@@ -12,7 +12,6 @@
 
   .wrapper {
     @include section-wrapper;
-    padding: 0 1.5rem;
 
     .textContainer {
       text-align: center;
@@ -47,8 +46,6 @@
   .team {
     .wrapper {
       .textContainer {
-        padding: 1.5rem;
-
         h3 {
           font-size: 4rem;
         }

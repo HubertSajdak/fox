@@ -22,7 +22,9 @@ const Accordion = ({ list }: { list: AccordionProps[] }) => {
 			{list.map(item => {
 				return (
 					<div className={styles.card} key={item.id}>
-						<div className={styles.cardHeader} onClick={() => openHandler(item.id)}>
+						<div
+							className={open === item.id ? `${styles.cardHeader} ${styles.headerOpen}` : styles.cardHeader}
+							onClick={() => openHandler(item.id)}>
 							<h5>{item.question}</h5>
 							{open === item.id ? <MdClose /> : <MdKeyboardArrowDown />}
 						</div>

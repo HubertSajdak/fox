@@ -21,6 +21,12 @@
       color: $color-white;
       padding: 1.5rem 3rem;
       cursor: pointer;
+      transition: 0.5s ease;
+    }
+
+    .headerOpen {
+      background-color: rgb(189, 186, 186);
+      transition: 0.5s ease;
     }
 
 
@@ -32,7 +38,7 @@
       padding: 0 3rem;
       font-size: 1.6rem;
       text-align: justify;
-      transition: 0.3s ease;
+      transition: 0.5s ease;
 
     }
 
@@ -40,7 +46,7 @@
       height: auto;
       opacity: 1;
       padding: 3rem;
-      transition: 0.3s ease;
+      transition: 0.5s ease;
 
     }
   }

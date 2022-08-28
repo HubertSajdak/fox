@@ -6,7 +6,6 @@
 
   .wrapper {
     @include section-wrapper;
-    padding: 0 1.5rem;
 
     .textContainer {
       text-align: center;
@@ -39,6 +38,10 @@
       display: flex;
       align-items: center;
 
+      .accordtion {
+        min-height: 3.5rem;
+      }
+
       .imgContainer {
 
         max-width: 35rem;
@@ -55,8 +58,6 @@
   .faq {
     .wrapper {
       .textContainer {
-        padding: 1.5rem;
-
         h3 {
           font-size: 4rem;
         }
