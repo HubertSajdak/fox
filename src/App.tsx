@@ -8,6 +8,7 @@ import OtherFeatures from "./components/sections/OtherFeatures/OtherFeatures";
 import Prices from "./components/sections/Prices/Prices";
 import Team from "./components/sections/Team/Team";
 import FAQ from "./components/sections/FAQ/FAQ";
+import Facts from "./components/sections/Facts/Facts";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 			<Prices />
 			<Team />
 			<FAQ />
+			<Facts />
 		</div>
 	);
 }

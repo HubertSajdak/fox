@@ -31,7 +31,7 @@ const Features = () => {
 						/>
 						<Feature
 							title="Easy to manage"
-							text="For more than 5 years, we’ve been passionate about achieving better."
+							text="For more than 5 years, we've been passionate about achieving better."
 							icon={<FiSettings />}
 							variant="left"
 						/>

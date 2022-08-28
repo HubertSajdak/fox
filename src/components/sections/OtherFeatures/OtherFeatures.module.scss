@@ -7,46 +7,14 @@
   overflow: hidden;
 
   .wrapper {
+
     .textContainer {
-      text-align: center;
-      margin-bottom: 5rem;
-
-      h3 {
-        color: $color-blue;
-        font-size: 6rem;
-        margin-bottom: 2.5rem;
-        font-weight: 900;
-
-        span {
-          color: $color-white;
-        }
-      }
-
-      p {
-        font-size: 1.8rem;
-        max-width: 75rem;
-        margin: 0 auto;
-        font-weight: 600;
-        line-height: 3rem;
-      }
-
+      @include text-container($color-blue, $color-white);
+      padding: 0 1.5rem;
     }
   }
 }
 
-@media (max-width:768px) {
-  .otherFeatures {
-    .wrapper {
-      .textContainer {
-        padding: 1.5rem;
-
-        h3 {
-          font-size: 4rem;
-        }
-      }
-    }
-  }
-}
 
 :global(.slick-slide) {
   opacity: 0.8;

@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.factCard {
+  background-color: $color-white;
+  padding: 3.2rem;
+  border-radius: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem;
+  width: 100%;
+
+  .icon {
+    font-size: 5rem;
+    color: $color-primary;
+    margin-bottom: 1rem;
+  }
+
+  h5,
+  h6 {
+    color: $color-primary;
+    margin-bottom: 1rem;
+    text-align: center;
+
+  }
+
+  h5 {
+    font-size: 5.5rem;
+    font-weight: 900;
+  }
+
+  h6 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+  }
+}
