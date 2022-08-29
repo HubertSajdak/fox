@@ -9,7 +9,6 @@
     border-radius: 2.8rem;
     background-color: $color-primary;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: auto;
 
     overflow: hidden;
 
@@ -33,7 +32,7 @@
     .cardBody {
       background-color: $color-white;
       line-height: 3rem;
-      height: 0;
+      max-height: 0;
       opacity: 0;
       padding: 0 3rem;
       font-size: 1.6rem;
@@ -43,7 +42,7 @@
     }
 
     .showCard {
-      height: auto;
+      max-height: 18rem;
       opacity: 1;
       padding: 3rem;
       transition: 0.5s ease;

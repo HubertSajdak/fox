@@ -1,5 +1,4 @@
 import styles from "./FactCard.module.scss";
-// import CountUp, { useCountUp } from "react-countup";
 import { useEffect, useState } from "react";
 export interface FactCardProps {
 	icon: React.ReactNode;

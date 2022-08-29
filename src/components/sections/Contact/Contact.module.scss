@@ -1,0 +1,53 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.contact {
+  @include section-padding;
+
+  .wrapper {
+    @include section-wrapper;
+
+    .textContainer {
+      @include text-container($color-blue, $color-primary);
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.5rem;
+
+      .formContainer {
+        .top {
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 2.5rem;
+        }
+
+      }
+    }
+
+    .cardsContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .contact {
+    .wrapper {
+      .form {
+        .formContainer {
+          .top {
+            flex-direction: column;
+          }
+        }
+      }
+
+      .cardsContainer {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
