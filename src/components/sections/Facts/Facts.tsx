@@ -6,9 +6,10 @@ import { BsDownload, BsShare } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 const Facts = () => {
 	const [isFactVisible, setIsFactVisible] = useState<boolean>(false);
-	const factsRef = useRef<HTMLElement>(null);
+	const factsRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
+		if (isFactVisible) return;
 		const observer = new IntersectionObserver(
 			entries => {
 				const entry = entries[0];
@@ -16,7 +17,6 @@ const Facts = () => {
 			},
 			{
 				threshold: 0.25,
-				rootMargin: "-300px",
 			}
 		);
 		if (factsRef.current) {
@@ -26,10 +26,10 @@ const Facts = () => {
 		return () => {
 			observer.disconnect();
 		};
-	}, []);
+	}, [isFactVisible]);
 
 	return (
-		<section id="facts" className={styles.facts} ref={factsRef}>
+		<section id="facts" className={styles.facts}>
 			<div className={styles.wrapper}>
 				<div className={styles.textContainer}>
 					<h3>
@@ -40,7 +40,7 @@ const Facts = () => {
 						ipsum amet madolor sit amet.
 					</p>
 				</div>
-				<div className={styles.factsContainer}>
+				<div className={styles.factsContainer} ref={factsRef}>
 					<FactCard title="coffe cups" stopValue={743} icon={<TbCup />} startValue={0} start={isFactVisible} />
 					<FactCard title="lines of code" stopValue={3000} icon={<BiCodeAlt />} startValue={0} start={isFactVisible} />
 					<FactCard title="downloads" stopValue={1768} icon={<BsDownload />} startValue={0} start={isFactVisible} />

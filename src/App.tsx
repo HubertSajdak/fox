@@ -9,6 +9,7 @@ import Prices from "./components/sections/Prices/Prices";
 import Team from "./components/sections/Team/Team";
 import FAQ from "./components/sections/FAQ/FAQ";
 import Facts from "./components/sections/Facts/Facts";
+import Contact from "./components/sections/Contact/Contact";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 			<Team />
 			<FAQ />
 			<Facts />
+			<Contact />
 		</div>
 	);
 }

@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.contactCard {
+  text-align: center;
+  padding: 1.6rem 3.2rem;
+  margin: 0 1.5rem;
+  width: 35rem;
+
+  .icon {
+    color: $color-primary;
+    font-size: 6rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width:768px) {
+  .contactCard {
+    width: 100%;
+  }
+}
