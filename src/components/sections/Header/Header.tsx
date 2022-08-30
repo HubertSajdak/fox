@@ -1,9 +1,33 @@
 import BaseLink from "../../BaseLink/BaseLink";
 import styles from "./Header.module.scss";
 import phoneImg from "../../../images/mobile-1.png";
+import { useContext, useEffect, useRef } from "react";
+import NavbarContext, { NavbarContextProps } from "../../../context/NavbarContext";
+
 const Header = () => {
+	const { setIsNavPosFixed } = useContext(NavbarContext) as NavbarContextProps;
+
+	const headerRef = useRef<HTMLElement>(null);
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			entries => {
+				const entry = entries[0];
+				setIsNavPosFixed(entry.isIntersecting);
+			},
+			{
+				threshold: 0.25,
+			}
+		);
+		if (headerRef.current) {
+			observer.observe(headerRef.current);
+		}
+		return () => {
+			observer.disconnect();
+		};
+	}, [setIsNavPosFixed]);
+
 	return (
-		<header id="home" className={styles.header}>
+		<header id="home" className={styles.header} ref={headerRef}>
 			<div className={styles.wrapper}>
 				<div className={styles.textContainer}>
 					<p style={{ fontSize: "1.6rem" }}>With us you will</p>

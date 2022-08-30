@@ -3,11 +3,17 @@ import { GiFox } from "react-icons/gi";
 import { RiMenu3Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import links from "./links";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import NavbarContext, { NavbarContextProps } from "../../context/NavbarContext";
 const Navbar = () => {
 	const [navOpen, setNavOpen] = useState<boolean>(false);
+	const { isNavPosFixed } = useContext(NavbarContext) as NavbarContextProps;
+	const closeMenuHandler = () => {
+		setNavOpen(false);
+	};
+
 	return (
-		<nav className={styles.navbar}>
+		<nav className={!isNavPosFixed ? `${styles.navbar} ${styles.navbarActive}` : styles.navbar}>
 			<div className={styles.wrapper}>
 				<div className={styles.logo}>
 					<GiFox />
@@ -25,7 +31,7 @@ const Navbar = () => {
 						{links.map(link => {
 							if (link.dropdown) {
 								return (
-									<li key={link.id} className={styles.linkItem}>
+									<li key={link.id} className={styles.linkItem} onClick={closeMenuHandler}>
 										<a className={styles.link} href={link.path}>
 											{link.label}
 										</a>
@@ -33,7 +39,7 @@ const Navbar = () => {
 								);
 							} else {
 								return (
-									<li key={link.id} className={styles.linkItem}>
+									<li key={link.id} className={styles.linkItem} onClick={closeMenuHandler}>
 										<a className={styles.sublinks} href={link.path}>
 											{link.label}
 										</a>

@@ -19,8 +19,8 @@ const links = [
 	},
 	{
 		id: 3,
-		label: "screenshots",
-		path: "#screenshots",
+		label: "prices",
+		path: "#prices",
 		dropdown: false,
 	},
 	{
@@ -31,6 +31,12 @@ const links = [
 	},
 	{
 		id: 5,
+		label: "FAQ",
+		path: "#faq",
+		dropdown: false,
+	},
+	{
+		id: 6,
 		label: "contact",
 		path: "#contact",
 		dropdown: false,
