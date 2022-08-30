@@ -12,24 +12,28 @@ import Facts from "./components/sections/Facts/Facts";
 import Contact from "./components/sections/Contact/Contact";
 import Map from "./components/sections/Map/Map";
 import Footer from "./components/sections/Footer/Footer";
-
+import { useEffect } from "react";
+import { NavbarProvider } from "./context/NavbarContext";
 function App() {
+	useEffect(() => {});
 	return (
-		<div className="App">
-			<Navbar />
-			<Header />
-			<Boxes />
-			<About />
-			<Features />
-			<OtherFeatures />
-			<Prices />
-			<Team />
-			<FAQ />
-			<Facts />
-			<Contact />
-			<Map />
-			<Footer />
-		</div>
+		<NavbarProvider>
+			<div className="App">
+				<Navbar />
+				<Header />
+				<Boxes />
+				<About />
+				<Features />
+				<OtherFeatures />
+				<Prices />
+				<Team />
+				<FAQ />
+				<Facts />
+				<Contact />
+				<Map />
+				<Footer />
+			</div>
+		</NavbarProvider>
 	);
 }
 

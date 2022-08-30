@@ -1,30 +1,41 @@
 import styles from "./Footer.module.scss";
-import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
+import { useForm, FieldValues } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Button from "../../Button/Button";
 import Widget from "../../Widget/Widget";
 const Footer = () => {
 	const subscriptionValidation = yup.object({
-		email: yup.string().email().required("This field can not be empty"),
+		userEmail: yup.string().email().required("This field can not be empty"),
 	});
-	const { handleSubmit, register } = useForm<FieldValues>({
+	const {
+		handleSubmit,
+		register,
+		formState: { errors },
+	} = useForm<FieldValues>({
+		shouldFocusError: true,
 		resolver: yupResolver(subscriptionValidation),
-		defaultValues: {
-			email: "",
-		},
 	});
 
 	const onSubmit = () => {
 		alert("Subscribed!");
 	};
+
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.wrapper}>
 				<div className={styles.subscribe}>
 					<form onSubmit={handleSubmit(onSubmit)}>
-						<input type="text" className={styles.subscribeEmailInput} placeholder="enter your email" />
-						<Button variant="primary" type="button">
+						<input
+							type="text"
+							className={
+								errors.userEmail ? `${styles.subscribeEmailInput} ${styles.inputError}` : styles.subscribeEmailInput
+							}
+							placeholder="Enter Your Email"
+							{...register("userEmail")}
+						/>
+
+						<Button variant="primary" type="submit">
 							subscribe
 						</Button>
 					</form>
