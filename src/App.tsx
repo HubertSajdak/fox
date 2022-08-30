@@ -10,6 +10,7 @@ import Team from "./components/sections/Team/Team";
 import FAQ from "./components/sections/FAQ/FAQ";
 import Facts from "./components/sections/Facts/Facts";
 import Contact from "./components/sections/Contact/Contact";
+import Map from "./components/sections/Map/Map";
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 			<FAQ />
 			<Facts />
 			<Contact />
+			<Map />
 		</div>
 	);
 }
