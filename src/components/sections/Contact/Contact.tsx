@@ -21,7 +21,7 @@ const Contact = () => {
 		message: yup.string().max(500, "Maximum 500 characters").required("This field can not be empty"),
 	});
 
-	const onSubmit: SubmitHandler<FieldValues> = data => console.log(data);
+	const onSubmit: SubmitHandler<FieldValues> = data => alert("message sent");
 
 	const { handleSubmit, control } = useForm<FieldValues>({
 		resolver: yupResolver(contactValidation),

@@ -11,6 +11,7 @@ import FAQ from "./components/sections/FAQ/FAQ";
 import Facts from "./components/sections/Facts/Facts";
 import Contact from "./components/sections/Contact/Contact";
 import Map from "./components/sections/Map/Map";
+import Footer from "./components/sections/Footer/Footer";
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 			<Facts />
 			<Contact />
 			<Map />
+			<Footer />
 		</div>
 	);
 }
