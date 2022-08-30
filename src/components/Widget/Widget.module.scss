@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.widget {
+  text-align: left;
+  color: $color-white;
+  width: 25rem;
+
+  h6 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    line-height: 3rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 1.6rem;
+      color: $color-white;
+      transition: color .3s ease;
+    }
+
+    a:hover {
+      color: $color-gold;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .widget {
+    text-align: center;
+  }
+}
