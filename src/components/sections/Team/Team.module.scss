@@ -4,6 +4,7 @@
 .team {
   @include section-padding;
   @include background-img('../../../images/gray-bg.jpg');
+  overflow: hidden;
 
   .wrapper {
     @include section-wrapper;

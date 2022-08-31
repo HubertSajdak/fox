@@ -4,6 +4,7 @@
 .facts {
   @include section-padding;
   background-color: $color-primary;
+  overflow: hidden;
 
   .wrapper {
     @include section-wrapper;
