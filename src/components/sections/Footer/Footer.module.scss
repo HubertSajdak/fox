@@ -3,11 +3,7 @@
 
 .footer {
   @include section-padding;
-  background-image: url("../../../images/black-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  @include background-img("../../../images/black-bg.jpg");
 
   .wrapper {
     @include section-wrapper;

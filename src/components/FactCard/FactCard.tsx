@@ -6,8 +6,9 @@ export interface FactCardProps {
 	startValue: number;
 	title: string;
 	start: boolean;
+	aosDelay?: number;
 }
-const FactCard = ({ icon, title, start, startValue, stopValue }: FactCardProps) => {
+const FactCard = ({ icon, title, start, startValue, stopValue, aosDelay = 0 }: FactCardProps) => {
 	const [count, setCount] = useState(startValue);
 
 	useEffect(() => {
@@ -24,7 +25,7 @@ const FactCard = ({ icon, title, start, startValue, stopValue }: FactCardProps) 
 	}, [count, start, stopValue]);
 
 	return (
-		<div className={styles.factCard}>
+		<div className={styles.factCard} data-aos="fade-up" data-aos-delay={`${aosDelay}`} data-aos-offset="350">
 			<div className={styles.icon}>{icon}</div>
 			<h5>{count}</h5>
 			<h6>{title}</h6>

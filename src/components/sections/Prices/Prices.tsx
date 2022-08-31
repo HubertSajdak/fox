@@ -39,6 +39,9 @@ const Prices = () => {
 								text: "Customer Support 24/7",
 							},
 						]}
+						aosAnimation="fade-right"
+						aosDelay={200}
+						aosOffset={500}
 					/>
 					<PriceCard
 						isSpecialOffer={true}
@@ -66,6 +69,9 @@ const Prices = () => {
 								text: "Customer Support 24/7",
 							},
 						]}
+						aosAnimation="fade-up"
+						aosDelay={600}
+						aosOffset={500}
 					/>
 					<PriceCard
 						title="Enterprise"
@@ -92,6 +98,9 @@ const Prices = () => {
 								text: "Customer Support 24/7",
 							},
 						]}
+						aosAnimation="fade-left"
+						aosDelay={1000}
+						aosOffset={500}
 					/>
 				</div>
 			</div>

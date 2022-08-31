@@ -28,23 +28,26 @@ const Features = () => {
 							text="Our system is comprehesive system of applied creativity"
 							icon={<FaShippingFast />}
 							variant="left"
+							aosDelay={400}
 						/>
 						<Feature
 							title="Easy to manage"
 							text="For more than 5 years, we've been passionate about achieving better."
 							icon={<FiSettings />}
 							variant="left"
+							aosDelay={800}
 						/>
 						<Feature
 							title="Cloud storage"
 							text="Our system is comprehesive system of applied creativity"
 							icon={<AiOutlineCloud />}
 							variant="left"
+							aosDelay={1200}
 						/>
 					</div>
 					<div className={styles.imgContainer}>
-						<img src={eclipse} alt="" className={styles.eclipse} />
-						<img src={phoneImg} alt="mobile device" className={styles.phone} />
+						<img src={eclipse} alt="" className={styles.eclipse} data-aos="zoom-in-up" />
+						<img src={phoneImg} alt="mobile device" className={styles.phone} data-aos="zoom-in-up" />
 					</div>
 					<div className={styles.featuresContainerTwo}>
 						<Feature
@@ -52,18 +55,21 @@ const Features = () => {
 							text="Our system is comprehesive system of applied creativity"
 							icon={<BsSave />}
 							variant="right"
-						/>{" "}
+							aosDelay={400}
+						/>
 						<Feature
 							title="Up to 50% sale"
 							text="For more than 5 years, we’ve been passionate about achieving better."
 							icon={<AiOutlineGift />}
 							variant="right"
-						/>{" "}
+							aosDelay={800}
+						/>
 						<Feature
 							title="Data base"
 							text="Our system is comprehesive system of applied creativity"
 							icon={<HiOutlineDatabase />}
 							variant="right"
+							aosDelay={1200}
 						/>
 					</div>
 				</div>

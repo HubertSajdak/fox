@@ -2,14 +2,16 @@ import styles from "./About.module.scss";
 import phoneImg from "../../../images/mobile-1.png";
 import Reason from "../../Reason/Reason";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+
+
 const About = () => {
 	return (
 		<section id="about" className={styles.about}>
 			<div className={styles.wrapper}>
-				<div className={styles.imgContainer}>
+				<div className={styles.imgContainer} data-aos="fade-right">
 					<img src={phoneImg} alt="mobile device" />
 				</div>
-				<div className={styles.textContainer}>
+				<div className={styles.textContainer} data-aos="fade-left">
 					<h3 className={styles.title}>Make Business Easy With Us</h3>
 					<p className={styles.description}>
 						Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incidit labore lorem

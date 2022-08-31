@@ -9,10 +9,25 @@ export interface PriceCardProps {
 		id: number;
 		text: string;
 	}[];
+	aosDelay?: number;
+	aosAnimation?: string;
+	aosOffset?: number;
 }
-const PriceCard = ({ title, price, list, isSpecialOffer = false }: PriceCardProps) => {
+const PriceCard = ({
+	title,
+	price,
+	list,
+	isSpecialOffer = false,
+	aosAnimation,
+	aosDelay = 0,
+	aosOffset = 120,
+}: PriceCardProps) => {
 	return (
-		<div className={styles.priceCard}>
+		<div
+			className={styles.priceCard}
+			data-aos={aosAnimation}
+			data-aos-delay={`${aosDelay}`}
+			data-aos-offset={`${aosOffset}`}>
 			<div className={styles.topBackground}>
 				<h4>{title}</h4>
 				<h3>{price}</h3>
