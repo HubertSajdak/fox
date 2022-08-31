@@ -12,10 +12,16 @@ import Facts from "./components/sections/Facts/Facts";
 import Contact from "./components/sections/Contact/Contact";
 import Map from "./components/sections/Map/Map";
 import Footer from "./components/sections/Footer/Footer";
-import { useEffect } from "react";
 import { NavbarProvider } from "./context/NavbarContext";
+import Aos from "aos";
 function App() {
-	useEffect(() => {});
+	Aos.init({
+		duration: 1500,
+		debounceDelay: 300,
+		once: true,
+		delay: 50,
+		offset: 200,
+	});
 	return (
 		<NavbarProvider>
 			<div className="App">

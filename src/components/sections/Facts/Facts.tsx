@@ -41,10 +41,38 @@ const Facts = () => {
 					</p>
 				</div>
 				<div className={styles.factsContainer} ref={factsRef}>
-					<FactCard title="coffe cups" stopValue={743} icon={<TbCup />} startValue={0} start={isFactVisible} />
-					<FactCard title="lines of code" stopValue={3000} icon={<BiCodeAlt />} startValue={0} start={isFactVisible} />
-					<FactCard title="downloads" stopValue={1768} icon={<BsDownload />} startValue={0} start={isFactVisible} />
-					<FactCard title="shares" stopValue={5284} icon={<BsShare />} startValue={0} start={isFactVisible} />
+					<FactCard
+						title="coffe cups"
+						stopValue={743}
+						icon={<TbCup />}
+						startValue={0}
+						start={isFactVisible}
+						aosDelay={500}
+					/>
+					<FactCard
+						title="lines of code"
+						stopValue={3000}
+						icon={<BiCodeAlt />}
+						startValue={0}
+						start={isFactVisible}
+						aosDelay={750}
+					/>
+					<FactCard
+						title="downloads"
+						stopValue={1768}
+						icon={<BsDownload />}
+						startValue={0}
+						start={isFactVisible}
+						aosDelay={1000}
+					/>
+					<FactCard
+						title="shares"
+						stopValue={5284}
+						icon={<BsShare />}
+						startValue={0}
+						start={isFactVisible}
+						aosDelay={1250}
+					/>
 				</div>
 			</div>
 		</section>

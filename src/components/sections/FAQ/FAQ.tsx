@@ -36,10 +36,10 @@ const FAQ = () => {
 					</p>
 				</div>
 				<div className={styles.content}>
-					<div className={styles.accordion}>
+					<div className={styles.accordion} data-aos="fade-right" data-aos-offset="350">
 						<Accordion list={faqList} />
 					</div>
-					<div className={styles.imgContainer}>
+					<div className={styles.imgContainer} data-aos="fade-left" data-aos-offset="350">
 						<img src={phoneImg} alt="mobile device" />
 					</div>
 				</div>

@@ -3,11 +3,8 @@
 
 .about {
   @include section-padding;
-  background-image: url(../../../images/gray-bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  @include background-img("../../../images/gray-bg.jpg");
+
 
   .wrapper {
     @include section-wrapper;
