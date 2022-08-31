@@ -1,4 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Silkscreen&display=swap');
+@import "./styles/_variables.scss";
+@import "./styles/_mixins.scss";
+@import "./components/Accordion/Accordion.module.scss";
+@import "./components/BaseLink/BaseLink.module.scss";
+@import "./components/Box/Box.module.scss";
+@import "./components/Button/Button.module.scss";
+@import "./components/ContactCard/ContactCard.module.scss";
+@import "./components/FactCard/FactCard.module.scss";
+@import "./components/Feature/Feature.module.scss";
+@import "./components/FeatureCard/FeatureCard.module.scss";
+@import "./components/Navbar/Navbar.module.scss";
+@import "./components/PriceCard/PriceCard.module.scss";
+@import "./components/Reason/Reason.module.scss";
+@import "./components/TeamMemberCard/TeamMemberCard.module.scss";
+@import "./components/TextArea/TextArea.module.scss";
+@import "./components/TextInput/TextInput.module.scss";
+@import "./components/Widget/Widget.module.scss";
+@import "./components/sections/About/About.module.scss";
+@import "./components/sections/Boxes/Boxes.module.scss";
+@import "./components/sections/Contact/Contact.module.scss";
+@import "./components/sections/Facts/Facts.module.scss";
+@import "./components/sections/FAQ/FAQ.module.scss";
+@import "./components/sections/Features/Features.module.scss";
+@import "./components/sections/Footer/Footer.module.scss";
+@import "./components/sections/Header/Header.module.scss";
+@import "./components/sections/OtherFeatures/OtherFeatures.module.scss";
+@import "./components/sections/Prices/Prices.module.scss";
+@import "./components/sections/Team/Team.module.scss";
 
 *,
 *::after,

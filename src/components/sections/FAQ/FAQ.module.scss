@@ -3,6 +3,7 @@
 
 .faq {
   @include section-padding;
+  overflow: hidden;
 
   .wrapper {
     @include section-wrapper;
